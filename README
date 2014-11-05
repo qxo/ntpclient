@@ -179,3 +179,8 @@ Adherence to RFC-4330 chapter 10, Best practices:
  8.  not supported (scary opportunity to DOS the _client_)
 
        - Larry Doolittle  <larry@doolittle.boa.org>
+
+``` before make you should make some change on Makefile, eg:
+ sed -i 's#/usr/local/opt/crosstool/arm-linux/gcc-3.3.4-glibc-2.3.2/arm-linux#/usr/arm-linux-gnueabi#g' Makefile
+ sed -i 's#^CC =.*#CC =arm-linux-gnueabi-gcc-4.4#' Makefile
+ ```
